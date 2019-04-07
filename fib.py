@@ -1,4 +1,9 @@
-def fib(n):
-    if n <= 2:
-        return 1
-    return fib(n-1)+fib(n-2)
+fib = 0
+num = 0
+num2 = 1
+print(num2, end=' ')
+while fib < 980:
+    fib = num + num2
+    num = num2
+    num2 = fib
+    print(fib, end=' ')
